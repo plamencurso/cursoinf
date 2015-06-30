@@ -3,10 +3,36 @@
 	text-align: center;	
 }
 
+/* estilos para las paginas secondarias */
+
+.detalles {
+	border: 1pt solid #000000;
+	margin: 20px;
+	text-align: center;		
+}
+
+.detalles_coche {
+	border: 1pt solid #000000;
+	display: inline-block;
+/*	height: 200px;*/
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+	vertical-align: top;
+	width: 45%;	
+}
+
+.imagen_coche {
+	display: block;
+	margin: 0 auto;
+}
+
+/* icono de coche en la pagina principal */
 .icono {
 	float: left;
 	margin: 10px;
 }
+
 .menu {
 	text-align: center;
 }
@@ -20,9 +46,10 @@
 	display: inline-block;
 	height: 200px;
 	margin: 10px;
+	padding: 10px;
 	text-align: justify;
 	vertical-align: top;
-	width: 30%;
+	width: 25%;
 }
 
 a.menu:link {
