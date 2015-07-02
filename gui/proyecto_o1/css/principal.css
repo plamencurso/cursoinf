@@ -3,6 +3,13 @@
 	text-align: center;	
 }
 
+/* estilos para todas las paginas */
+
+body {
+	font-family: "hornswogglednormal";
+	font-size: 1.5em;
+}
+
 /* estilos para las paginas secondarias */
 
 .detalles {
@@ -44,12 +51,17 @@
 .modelo {
 	border: 1pt solid #000000;
 	display: inline-block;
-	height: 200px;
+	/* height: 200px;*/
+	height: 45%;
 	margin: 10px;
 	padding: 10px;
 	text-align: justify;
 	vertical-align: top;
 	width: 25%;
+}
+
+.titulo {
+	font-family: "hetilicabold";
 }
 
 a.menu:link {
@@ -75,3 +87,31 @@ a.menu:hover {
 a.menu:visited {
     background: #ff8000;
 }
+
+/* fuentes */
+
+@font-face {
+    font-family: 'hetilicabold';
+    src: url('../fuentes/hetilica/hetilica-webfont.eot');
+    src: url('../fuentes/hetilica/hetilica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/hetilica/hetilica-webfont.woff') format('woff'),
+         url('../fuentes/hetilica/hetilica-webfont.ttf') format('truetype'),
+         url('../fuentes/hetilica/hetilica-webfont.svg#hetilicabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hornswogglednormal';
+    src: url('../fuentes/hornswog/HORNSWOG-webfont.eot');
+    src: url('../fuentes/hornswog/HORNSWOG-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/hornswog/HORNSWOG-webfont.woff') format('woff'),
+         url('../fuentes/hornswog/HORNSWOG-webfont.ttf') format('truetype'),
+         url('../fuentes/hornswog/HORNSWOG-webfont.svg#hornswogglednormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
