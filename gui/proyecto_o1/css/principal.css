@@ -8,6 +8,9 @@
 body {
 	font-family: "hornswogglednormal";
 	font-size: 1.5em;
+	background-image:url('../media/img/coche2.png');
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 /* estilos para las paginas secondarias */
@@ -15,7 +18,7 @@ body {
 .detalles {
 	border: 1pt solid #000000;
 	margin: 20px;
-	text-align: center;		
+	text-align: center;
 }
 
 .detalles_coche {
@@ -30,8 +33,10 @@ body {
 }
 
 .imagen_coche {
+    border-bottom-right-radius: 2em;
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 
 /* icono de coche en la pagina principal */
@@ -85,7 +90,7 @@ a.menu:hover {
 }
 
 a.menu:visited {
-    background: #ff8000;
+    background: #ff3838;
 }
 
 /* fuentes */
