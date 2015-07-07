@@ -104,3 +104,40 @@ section{
 	filter: alpha(opacity=10); /*para el navegador explorer de Microsoft en versiones anteriores a la version 11 de explorer*/
 }
 
+
+@media (max-width: 400px) {
+	#contenedor {
+		width:98%;
+	}
+	.izquierda, .derecha img {
+		width: 85%;
+	}
+	.izquierda img, .derecha img {
+		/* display:none;*/
+		width: 30%;
+	}
+	
+	.izquierda p, .derecha p {
+		font-size: .8em;
+	}
+	
+}
+
+@media (min-width: 401px)  and (max-width: 800px) {
+
+	#contenedor {
+		width:98%;
+	}
+	
+	.izquierda, .derecha {
+		margin: .2em;
+	}
+
+	.izquierda img, .derecha img {
+		width: 25%;
+	}
+	
+	.izquierda p, .derecha p {
+		font-size: .8em;
+	}
+}
