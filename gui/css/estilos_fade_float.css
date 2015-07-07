@@ -1,0 +1,106 @@
+body {
+	background: url("../media/imagenes/rosa_vientos.png") top left no-repeat;
+				/*url("../media/imagenes/rosa_vientos.png") top center no-repeat,
+				url("../media/imagenes/rosa_vientos.png") top right no-repeat,
+				
+
+				url("../media/imagenes/rosa_vientos.png") center left no-repeat,
+				url("../media/imagenes/rosa_vientos.png")  center no-repeat,
+				url("../media/imagenes/rosa_vientos.png") center right no-repeat,
+
+
+				url("../media/imagenes/rosa_vientos.png") bottom left no-repeat,
+				url("../media/imagenes/rosa_vientos.png") bottom center no-repeat,
+				url("../media/imagenes/rosa_vientos.png") bottom right no-repeat;*/
+}
+
+section{
+	background: #f9f3ce;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+}
+
+#contenedor {
+	border: 0em solid #000;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+	width: 80%;
+	margin: 0 auto;
+	/*padding:  1em;  se sustituye por el margin del contenido para que no afecte*/
+	width: 80%;
+	} 
+
+	#fade{
+	border-radius: none;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+	float: center;
+	margin-right: 2em;
+	margin-top: 2em;
+	margin-bottom: 1.3em;
+}
+#sol{
+	border-radius: none;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+	float: center;
+	margin-right: 2em;
+	margin-top: 1em;
+	margin-bottom: 1.3em;
+}
+
+
+.izquierda, .derecha {
+	background: #f5ecb0;
+	border: 0em solid #880303;
+	border-radius: .5em;
+	margin: 1em;
+	padding: .5em;
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.izquierda p, .derecha p{
+	font-family: verdana;	
+	font-size: 10pt;
+	text-align: justify;
+}
+
+.izquierda img {
+	border-radius: 0 1em 0 1em;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+	float: left;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: .1em;
+
+	}
+
+.derecha img{
+	border-radius: 1em 1em 1em 1em;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
+	float: right;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: .1em;
+}
+
+
+.fade:hover {
+	transition: all 0.5s ease-in; 
+	-ms-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	-moz-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	o-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	-webkit-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	opacity: .5;
+	filter: alpha(opacity=5); /*para el navegador explorer de Microsoft en versiones anteriores a la version 11 de explorer*/
+
+}
+.fade{
+	transition: all 0.5s ease-in; 
+	-ms-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	-moz-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	o-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	-webkit-transition: all 0.5s ease-in;/*Estas líneas se ponen para que la transición se haga correctamente en todos los navegadores*/
+	opacity: 1;
+	filter: alpha(opacity=10); /*para el navegador explorer de Microsoft en versiones anteriores a la version 11 de explorer*/
+}
+
