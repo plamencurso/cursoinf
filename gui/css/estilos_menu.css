@@ -30,3 +30,25 @@ a.menu:visited {
 }
 
 /* http://www.degs.co.uk/test/css/pseudo_classes.htm# */
+
+
+
+
+@media (max-width: 400px) {
+    .menu {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 401px) and (max-width: 800px) {
+    .menu {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .menu {
+        font-size: 2em;
+    }
+}
