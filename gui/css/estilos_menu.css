@@ -47,7 +47,7 @@ a.menu:visited {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1280px) {
     .menu {
         font-size: 2em;
     }
