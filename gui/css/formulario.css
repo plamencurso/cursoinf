@@ -1,0 +1,22 @@
+label, select, datalist {
+	color: red;
+}
+
+label, .blk {
+	background-color: yellow;
+	text-align: left;
+	display: block;
+	cursor: pointer;	
+}
+
+textarea {
+	resize: none;
+}
+
+#contenedor {
+	display: inline-block;
+}
+
+#formulario {
+}
+

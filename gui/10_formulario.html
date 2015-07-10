@@ -4,54 +4,85 @@
 	<head>
 		<title>Formulario</title>
 		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/formulario.css">
 
 		<style>
-			label {
-				cursor:pointer;
-			}
+
 		</style>
 	</head>
 
 	<body>
 		<section id="contenedor">
 			<section id="formulario">
-				<form name="formulario_uno" action="mailto:algo@xxx.com" method="post" enctype="text/plain">
+				<form id="form" name="formulario_uno" action="mailto:algo@xxx.com" method="post" enctype="text/plain">
 					<h2>Datos Personales<h2>
 
-					<label for="nombre">Nombre: </label>
-					<input type="text" id="nombre" name="nombre_txt" autofocus />
+					<section id="form_section">
+						<label class="formel" for="nombre">Nombre: </label>
+						<input class="formel" type="text" id="nombre" name="nombre_txt" autofocus />
 
-					<label for="apellidos">Appelidos: </label>
-					<input type="text" id="apellidos" name="apellidos_txt" />
+						<label for="apellidos">Appelidos: </label>
+						<input type="text" id="apellidos" name="apellidos_txt" />
 
-					<label for="telefono">Teléfono: </label>
-					<input type="tel" id="telefono" name="telefono_tel" />
+						<label for="telefono">Teléfono: </label>
+						<input type="tel" id="telefono" name="telefono_tel" />
 
-					<label for="unidades">Unidades: </label>
-					<input type="number" id="number" name="unidades_num" />
+						<label for="unidades">Unidades: </label>
+						<input type="number" id="number" name="unidades_num" />
 
-					<label for="pass">Contraseña: </label>
-					<input type="password" id="pass" name="contrasena_psw" />
+						<label for="pass">Contraseña: </label>
+						<input type="password" id="pass" name="contrasena_psw" />
 
-					<label for="correo">E-mail: </label>
-					<input type="email" id="correo" name="mail" placeholder="introduzca su mail"/>
+						<label for="correo">E-mail: </label>
+						<input type="email" id="correo" name="mail" placeholder="introduzca su mail"/>
 
-					<label>Sexo:</label>
-					<input type="radio" name="sexo" value="Soy Hombre">Hombre
-					<input type="radio" name="sexo" value="Soy Mujer">Mujer
+						<section class="blk">
+							<label>Sexo:</label>
+							<div>
+								<input type="radio" name="sexo" value="Soy Hombre">Hombre
+								<input type="radio" name="sexo" value="Soy Mujer">Mujer
+							</div>
+						</section>
 
-					<label>Aficiones:</label>
-					<input type="checkbox" name="cine_ckb" value="cine">Me gusta Cine
-					<input type="checkbox" name="musica_ckb" value="musica">Me gusta Musica
-					<input type="checkbox" name="deportes_ckb" value="deportes">Me gusta Deportes
-					<input type="checkbox" name="teatro_ckb" value="teatro">Me gusta Teatro
-					<input type="checkbox" name="viajar_ckb" value="viajar">Me gusta Viajar
+						<section>
+							<label>Aficiones:</label>
+							<div><input type="checkbox" name="cine_ckb" value="cine">Me gusta Cine</div>
+							<div><input type="checkbox" name="musica_ckb" value="musica">Me gusta Musica</div>
+							<div><input type="checkbox" name="deportes_ckb" value="deportes">Me gusta Deportes</div>
+							<div><input type="checkbox" name="teatro_ckb" value="teatro">Me gusta Teatro</div>
+							<div><input type="checkbox" name="viajar_ckb" value="viajar">Me gusta Viajar</div>
+						</section>
+						
+						<label>Qué coche tienes</label>
+						<select name="marca_coche">
+							<option value="No selecionado">Selecionar</option>
+							<option value="Tengo un Audi">AUDI</option>
+							<option value="Tengo un Audi">BMW</option>
+							<option value="Tengo un Audi">SEAT</option>
+							<option value="Tengo un Audi">Renault</option>
+						</select>
+
+						<label>Comida favorita</label>
+						<input tye="text" list="comidas" name="comida"/>
+
+						<datalist id="comidas">
+							<option value="Tortilla Patatas">Tortilla</option>
+							<option value="Sopa de cebolla">Sopar</option>
+							<option value="Pollo asado">Pollo</option>
+							<option value="Mejillones marinera">Mejillones</option>
+							<option value="Gambas plancha">Gambas</option>
+							<option value="Sopa de cebolla">PAeella</option>
+						</datalist>
 
 
-					
-					<input type="reset" id="borrar" name="borrar_btn" value="Borrar">
-					<input type="submit" id="enviar" name="enviar_btn" value="Enviar">
-					
+						<label for="mensaje">Mensaje:</label>
+						<textarea class="blk" id="mensaje" name="mensaje_txa" placeholder="Describa su consulta ...">
+						</textarea>
+
+
+						<input type="submit" id="enviar" name="enviar_btn" value="Enviar">
+						<input type="reset" id="borrar" name="borrar_btn" value="Borrar">
+					</section> <!-- form_section -->
 				</form>
 			</section>
 		</section>
