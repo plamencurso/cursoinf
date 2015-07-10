@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8"/>
+
+		<style>
+			label {
+				cursor:pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section id="contenedor">
+			<section id="formulario">
+				<form name="formulario_uno" action="mailto:algo@xxx.com" method="post" enctype="text/plain">
+					<h2>Datos Personales<h2>
+
+					<label for="nombre">Nombre: </label>
+					<input type="text" id="nombre" name="nombre_txt" autofocus />
+
+					<label for="apellidos">Appelidos: </label>
+					<input type="text" id="apellidos" name="apellidos_txt" />
+
+					<label for="telefono">Teléfono: </label>
+					<input type="tel" id="telefono" name="telefono_tel" />
+
+					<label for="unidades">Unidades: </label>
+					<input type="number" id="number" name="unidades_num" />
+
+					<label for="pass">Contraseña: </label>
+					<input type="password" id="pass" name="contrasena_psw" />
+
+					<label for="correo">E-mail: </label>
+					<input type="email" id="correo" name="mail" placeholder="introduzca su mail"/>
+
+					<label>Sexo:</label>
+					<input type="radio" name="sexo" value="Soy Hombre">Hombre
+					<input type="radio" name="sexo" value="Soy Mujer">Mujer
+
+					<label>Aficiones:</label>
+					<input type="checkbox" name="cine_ckb" value="cine">Me gusta Cine
+					<input type="checkbox" name="musica_ckb" value="musica">Me gusta Musica
+					<input type="checkbox" name="deportes_ckb" value="deportes">Me gusta Deportes
+					<input type="checkbox" name="teatro_ckb" value="teatro">Me gusta Teatro
+					<input type="checkbox" name="viajar_ckb" value="viajar">Me gusta Viajar
+
+
+					
+					<input type="reset" id="borrar" name="borrar_btn" value="Borrar">
+					<input type="submit" id="enviar" name="enviar_btn" value="Enviar">
+					
+				</form>
+			</section>
+		</section>
+	</body>
+
+</html>
