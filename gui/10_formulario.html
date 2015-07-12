@@ -18,8 +18,11 @@
 					<h2>Datos Personales<h2>
 
 					<section id="form_section">
+						
+						<!-- Separar mas los datos personales -->
+						
 						<label class="formel" for="nombre">Nombre: </label>
-						<input class="formel" type="text" id="nombre" name="nombre_txt" autofocus />
+						<input class="formel" type="text" id="nombre" name="nombre_txt" autofocus required />
 
 						<label for="apellidos">Appelidos: </label>
 						<input type="text" id="apellidos" name="apellidos_txt" />
@@ -44,41 +47,44 @@
 							</div>
 						</section>
 
-						<section>
+						<section class="formsec">
 							<label>Aficiones:</label>
-							<div><input type="checkbox" name="cine_ckb" value="cine">Me gusta Cine</div>
-							<div><input type="checkbox" name="musica_ckb" value="musica">Me gusta Musica</div>
-							<div><input type="checkbox" name="deportes_ckb" value="deportes">Me gusta Deportes</div>
-							<div><input type="checkbox" name="teatro_ckb" value="teatro">Me gusta Teatro</div>
+							<div><input type="checkbox" name="cine_ckb" value="cine">Me gusta el Cine</div>
+							<div><input type="checkbox" name="musica_ckb" value="musica">Me gusta la Musica</div>
+							<div><input type="checkbox" name="deportes_ckb" value="deportes">Me gustan los Deportes</div>
+							<div><input type="checkbox" name="teatro_ckb" value="teatro">Me gusta el Teatro</div>
 							<div><input type="checkbox" name="viajar_ckb" value="viajar">Me gusta Viajar</div>
 						</section>
 						
-						<label>Qué coche tienes</label>
-						<select name="marca_coche">
-							<option value="No selecionado">Selecionar</option>
-							<option value="Tengo un Audi">AUDI</option>
-							<option value="Tengo un Audi">BMW</option>
-							<option value="Tengo un Audi">SEAT</option>
-							<option value="Tengo un Audi">Renault</option>
-						</select>
+						<section class="formsec">
+							<label>Qué coche tienes</label>
+							<select name="marca_coche">
+								<option value="No selecionado">Selecionar</option>
+								<option value="Tengo un Audi">AUDI</option>
+								<option value="Tengo un Audi">BMW</option>
+								<option value="Tengo un Audi">SEAT</option>
+								<option value="Tengo un Audi">Renault</option>
+							</select>
+						</section>
 
-						<label>Comida favorita</label>
-						<input tye="text" list="comidas" name="comida"/>
+						<section class="formsec">
+							<label>Comida favorita</label>
+							<input tye="text" list="comidas" name="comida"/>
+							<datalist id="comidas">
+								<option value="Tortilla Patatas">Tortilla</option>
+								<option value="Sopa de cebolla">Sopar</option>
+								<option value="Pollo asado">Pollo</option>
+								<option value="Mejillones marinera">Mejillones</option>
+								<option value="Gambas plancha">Gambas</option>
+								<option value="Sopa de cebolla">PAeella</option>
+							</datalist>
+						</section>	
 
-						<datalist id="comidas">
-							<option value="Tortilla Patatas">Tortilla</option>
-							<option value="Sopa de cebolla">Sopar</option>
-							<option value="Pollo asado">Pollo</option>
-							<option value="Mejillones marinera">Mejillones</option>
-							<option value="Gambas plancha">Gambas</option>
-							<option value="Sopa de cebolla">PAeella</option>
-						</datalist>
-
-
-						<label for="mensaje">Mensaje:</label>
-						<textarea class="blk" id="mensaje" name="mensaje_txa" placeholder="Describa su consulta ...">
-						</textarea>
-
+						<section class="formsec">
+							<label for="mensaje">Mensaje:</label>
+							<textarea class="blk" id="mensaje" name="mensaje_txa" placeholder="Describa su consulta ...">
+							</textarea>
+						</section>	
 
 						<input type="submit" id="enviar" name="enviar_btn" value="Enviar">
 						<input type="reset" id="borrar" name="borrar_btn" value="Borrar">

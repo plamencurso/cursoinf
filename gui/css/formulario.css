@@ -1,9 +1,14 @@
+body {
+	font-family: monospace;
+	background-color: #66CCFF;
+}
+
 label, select, datalist {
-	color: red;
+/*	color: red;*/
 }
 
 label, .blk {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	text-align: left;
 	display: block;
 	cursor: pointer;	
@@ -13,8 +18,11 @@ textarea {
 	resize: none;
 }
 
+.formsec {
+	margin-top: 1em;
+}
+
 #contenedor {
-	display: inline-block;
 }
 
 #formulario {
