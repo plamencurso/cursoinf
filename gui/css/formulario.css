@@ -1,10 +1,37 @@
-body {
+* {
+	margin: 0;
 	font-family: monospace;
+}
+
+body {
 	background-color: #66CCFF;
 }
 
-input {
+input, textarea {
+/*	background: gold;*/
 /*	border-radius: 13em / 3em; */
+	border-radius: 0.5em;
+}
+
+input[type="text"], [type="password"], [type="email"],  [type="tel"], [type="number"], select, textarea{
+	background: #ddfefe;
+	border: .1em solid #000000;
+	border-radius: .25em;
+	display: block;
+	font-size: .8em;
+	padding-left: .3em;
+	
+}
+
+input[type="text"]:focus, [type="password"]:focus, [type="email"]:focus,  [type="tel"]:focus, [type="number"]:focus, select:focus, textarea:focus {
+	background: #ffffff;
+}
+
+input[type="submit"]:hover, [type="reset"]:hover {
+	background: #d7d7d7;
+} 
+
+input[type="submit"], [type="reset"] {
 }
 
 label, select, datalist {
@@ -14,8 +41,8 @@ label, select, datalist {
 label, .blk {
 /*	background-color: yellow;*/
 	cursor: pointer;	
-	text-align: left;
 	display: block;
+	text-align: left;
 }
 
 textarea {
@@ -27,8 +54,35 @@ textarea {
 }
 
 #contenedor {
+	border: .1em solid #000000;
+	border-radius: 0.3em;
 }
 
 #formulario {
+	border: .1em solid #f60;
+	border-radius: 0.3em;
+	padding-bottom: .5em;
+	margin-left: 1em;
+	padding-left: 1em;
+	width: 40%;
 }
 
+:-moz-placeholder {
+	color: blue;
+}
+
+::-moz-placeholder {
+	color: blue;
+}
+
+::-webkit-input-placeholder {
+	color: green;
+}
+
+::-ms-input-placeholder {
+	color: red;
+}
+
+.texto {
+	font-size: 0.8em;
+}
