@@ -3,15 +3,19 @@ body {
 	background-color: #66CCFF;
 }
 
+input {
+/*	border-radius: 13em / 3em; */
+}
+
 label, select, datalist {
 /*	color: red;*/
 }
 
 label, .blk {
 /*	background-color: yellow;*/
+	cursor: pointer;	
 	text-align: left;
 	display: block;
-	cursor: pointer;	
 }
 
 textarea {
