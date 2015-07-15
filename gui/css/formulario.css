@@ -7,6 +7,10 @@ body {
 	background-color: #66CCFF;
 }
 
+iframe {
+	display: inline-block;
+}
+
 input, textarea {
 /*	background: gold;*/
 /*	border-radius: 13em / 3em; */
@@ -53,9 +57,17 @@ textarea {
 	margin-top: 1em;
 }
 
+.mapsec {
+	border: .1em solid #000000;
+	border-radius: .25em;
+	
+}
+
 #contenedor {
 	border: .1em solid #000000;
 	border-radius: 0.3em;
+	width: 40%;
+	display: inline-block;
 }
 
 #formulario {
@@ -65,6 +77,9 @@ textarea {
 	margin-left: 1em;
 	padding-left: 1em;
 	width: 40%;
+}
+
+#mapsec {
 }
 
 :-moz-placeholder {
