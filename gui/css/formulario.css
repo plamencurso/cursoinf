@@ -7,10 +7,6 @@ body {
 	background-color: #66CCFF;
 }
 
-iframe {
-	display: inline-block;
-}
-
 input, textarea {
 /*	background: gold;*/
 /*	border-radius: 13em / 3em; */
@@ -57,30 +53,32 @@ textarea {
 	margin-top: 1em;
 }
 
-.mapsec {
-	border: .1em solid #000000;
-	border-radius: .25em;
-	
-}
 
 #contenedor {
 	border: .1em solid #000000;
 	border-radius: 0.3em;
-	width: 40%;
+}
+
+#mapsec {
+	border: .1em solid #FFFFFF;
+	border-radius: 0.3em;
 	display: inline-block;
+	vertical-align: top;
+	width: 40%;
 }
 
 #formulario {
 	border: .1em solid #f60;
 	border-radius: 0.3em;
+	display: inline-block;
 	padding-bottom: .5em;
 	margin-left: 1em;
 	padding-left: 1em;
+	vertical-align: top;
 	width: 40%;
 }
 
-#mapsec {
-}
+
 
 :-moz-placeholder {
 	color: blue;
