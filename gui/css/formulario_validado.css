@@ -1,0 +1,86 @@
+
+* {
+	margin: 0;
+	font-family: "Gabriola";
+}
+
+body {
+	background: #dddddd;
+	font-size: 1.5em;
+	letter-spacing: .01em;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], select, textarea{
+	background: #ddfefe;
+	border: .1em solid #000000;
+	border-radius: .25em;
+	display: block;
+	font-size: .7em;
+	padding-left: .3em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, select:focus, textarea:focus{
+	background: #FFFFFF;
+}
+
+
+textarea {
+	resize: none;
+}
+
+input[type="button"] {
+	background: #787878;
+	border-radius: .25em;
+	cursor: pointer;
+	font-size: .8em;
+	margin-top: .5em;
+}
+
+input[type="button"]:hover {
+	background: #d7d7d7;
+}
+
+:-moz-placeholder {
+	color: blue;
+}
+
+::-moz-placeholder {
+	color: blue;
+}
+
+::-webkit-input-placeholder {
+	color: green;
+}
+
+:-ms-input-placeholder {
+	color: red;
+}
+
+
+#contenedor {
+	border: .1em solid #000000;
+	border-radius: .3em;
+}
+
+.formulario {
+	border: .1em solid #F60;
+	border-radius: .3em;
+	margin-left: 1em;
+	padding-bottom: .5em;
+	padding-left: 1em;
+	width: 40%;
+}
+
+
+
+
+
+
+.texto {
+	font-size: .7em;
+}
